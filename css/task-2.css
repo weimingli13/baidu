@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	hieght:1000px;
+	width:100%;
+	background-color:#000000;
+}
+*{margin:0;padding:0;}
+.wrap{
+	width:1282px;
+	background-color:#dedede;
+	margin:0 auto;
+}
+.head{
+	width:100%;
+	height:50px;
+	background:#2A2727; 
+	margin-bottom:20px;
+     } 
+.logo{
+	width:120px;
+	height:50px;
+	background:url(../imges/bd.png) no-repeat;
+	background-size:100% 50px;
+	float:left;
+}
+.nav{float:right;}
+.nav li{
+	float:left;
+	margin-right:20px;
+	margin-top:15px;
+	list-style:none;	
+}
+.nav li a{color:#ffffff;text-decoration:none;}
+.main ul{
+	width:1238px;
+	margin:0 auto;
+}
+.main ul li{
+	list-style:none;
+	padding:20px;
+	margin-bottom:20px;
+	border:2px solid #ADACAC;
+	background-color:#ffffff;
+}
+.main h1{margin-bottom:20px;}
+.main h5{margin-bottom:20px;}
+.main p{font-size:14px;text-indent:2em;line-height:25px;}
+.main ul .image{
+	border:1px solid #ccc;
+	width:200px;
+	height:200px;
+	text-align:center;
+	margin:0;padding:0;
+	text-indent:0;
+	background:url(../imges/github.jpg) no-repeat center;
+	background-size:100px 100px;
+	margin-bottom:20px;
+}
+.table ol li{
+	border:none;
+	margin:0;
+	padding:0;
+}
+.table tr td{border:1px solid #929292;}
+.t_head{background:#000000;color:#fff;}
+.t_head td{width:493px;}
+.t_foot{background:#929292;}
+.form{font-size:14px;}
+.form h1{
+border-left:2px solid #ccc;
+margin-left:20px;
+padding-left:20px;
+}
+.form form{
+	margin-left:280px;
+}
+.describe textarea{
+	width:750px;
+	height:100px;
+}
+.form button{
+	width:100%;
+	height:40px;
+	background:#81C2F1;
+	border-radius:10px;
+	margin-top:10px;
+}
+.foot{
+	width:100%;
+	height:80px;
+	background:#000000;
+}
+.foot p{color:#fff;width:100%;height:100%;
+text-align:center;line-height:50px;}
