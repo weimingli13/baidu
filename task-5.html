@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+	<head>
+		<style type="text/css"> 
+			body {
+				background: #DEDEDE;
+				position: absolute;
+			}
+			nav{height:80px;;}
+			.navi {
+				background: #2C2D26;
+				height:80px;
+				width: 100%;
+				margin-top: -20px;
+				margin-left: -10px;
+				clear: both;
+				position: fixed;
+			}  
+			.navi .list-first, .title{
+				float: left;
+				color: white;
+				font-size: 20px;
+				list-style-type: none;
+			}
+			.navi .list-first img {
+				margin-left: 30px;
+				height: 60%;
+				width: 60%;
+			}
+			.navi .title {
+				margin-top: 20px;
+			}
+			.menu {
+				float: right;
+				line-height: 60px;
+			}
+			.menu a {
+				text-decoration: none;
+			    color: white;
+			    display: block;
+			    width: 80px;
+			    height: 60px;
+			    font-size: 15px;
+			}
+			.contents div{
+				background: white;
+				margin-left: 1%;
+				margin-right: 1%;
+				margin-bottom: 1%;
+				padding: 1%;
+				border-style: none solid solid none;
+				border-width: 2px;
+				border-color: #999999;
+			}
+			
+			.contents a:visited {
+				color:#0000FF;
+			} 
+			.contents ul {
+				list-style-type: none;
+			}
+			.author, h3 {
+				color: gray;
+			}
+			.pictures div {
+				margin-left: 40px;
+				text-align: center;
+				width: 220px;
+				border-style: solid;
+			}
+			.last-story table {
+				width: 100%;
+				border-style: solid;
+				border-width: 1px;
+			}
+			.last-story table tr {
+				border-style: solid;
+				border-width: 1px;
+			}
+			.last-story th {
+				background: black;
+				color: white;
+				text-align: left;
+			}
+			.last-row td {
+				background: gray;
+			}
+			.left-div {
+				float: left;
+				border-style: none;
+				text-align: right;
+				margin-right: 20px;
+				margin-top: -14px;
+			}
+			
+			.right-label {
+				/*margin-left: 20px;
+				text-align: left;
+				margin-top: -10px;*/
+				background-color: red;
+			}
+			.form small {
+				color: #bbbbbb;
+				line-height: 35px;
+			}
+			.personal-desc label {
+				vertical-align: top;
+			}
+			
+			.personal-desc textarea {
+				font-size: 17px;
+				font-weight: bold;
+				margin-left:50px;
+			}
+			aside {
+				color: black;
+				border-style: none none none solid;
+				border-color: gray;
+				padding-left: 10px;
+			}
+			button {
+				width: 100%;
+				height: 30px;
+				color: white;
+				font-size: 16px;
+				border-style: none;
+				border-radius: 5px;
+				background: #0000FF;
+			}
+			.footer {
+				background: black;
+				height: 50px;
+				width: 100%;
+				color: white;
+				text-align: center;
+				font-size: 10px;
+				line-height: 50px;
+				margin-bottom: -30px;
+				position:absolute;
+				bottom:0px;
+				left:0px;
+			}
+		.wrap{
+			width:auto;
+			height:auto;
+		}
+		.contents{
+			width:70%;
+			float:left;
+		   margin-left:50px;
+		}
+		.clearfix:after{
+			content:'';
+			height:0;
+			display:block;
+			clear:both;
+		}
+		.side-bar{
+			width:300px;
+			height:100%;
+			background:#fff; 
+			padding:10px;
+			float:right;
+			border:2px solid #999;}
+		.img1,.img2,.img3,.img4{float:left;margin:0;}
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<div class="navi">
+				<ul>
+					<li class="list-first"><img src="https://img-cdn-qiniu.dcloud.net.cn/icon1.png" alt=""></li><li class="title">Learn to Code HTML & CSS</li>
+					<li class="menu" active><a href="#">关于我们</a></li>
+					<li class="menu"><a href="#">CSS</a></li>
+					<li class="menu"><a href="#">Html</a></li>
+					<li class="menu"><a href="#">首页</a></li>
+				</ul>
+			</div>
+		</nav>
+        <div class="wrap clearfix">
+       		
+       		 <div class="side-bar">
+				<h3><aside>这里以后是个侧栏，这是侧栏标题</aside></h3>
+				<form class="form" action="">
+					<label class="left-div">
+						<p>请输入邮箱地址 </p><br />
+						<p>请输入密码 </p>
+						<p>请重复输入密码 </p><br />
+						<p>性别 </p>
+						<p>城市 </p>
+						<p>爱好 </p>
+						<p>个人描述 </p>
+					</label>
+					<label class="right-label">
+						<p>
+		                    <input name="addr" value="这是一个文本输入框" type="text" class="normal"/><br />
+		                    <small>邮箱地址请按要求格式输入</small>
+	                	</p>
+	                	<p>  
+		                    <input name="passwd" placeholder="请输入密码" value="123456" type="password" class="normal"/>
+	                	</p>
+	                	<p>  
+		                    <input name="passwd" placeholder="再次输入密码" value="123456"type="password" class="normal"/> <br />
+		                   	<small>密码请为6-16位英文数字</small>
+	                	</p>
+						<p>
+							<input type="radio" checked>男</input>
+							<input type="radio">女</input>
+	                	</p>
+	                	<p>  
+							<select>
+								<option value="beijing">北京</option>
+								<option value="shanghai">上海</option>
+								<option value="shenzhen">深圳</option>
+								<option value="guangzhou">广州</option>
+							</select>
+	                	</p>
+						<p>  
+							<input type="checkbox">运动</input>
+							<input type="checkbox">艺术</input>
+							<input type="checkbox">科学</input>
+	                	</p>
+						<p class="personal-desc">  
+		                    
+							<textarea cols="20" rows="3">这是个多行输入框,输入您的个人描述</textarea>
+	                	</p>
+	                </label>
+				</form>
+				<button type="button">确认提交</button>
+			</div> 
+            <div class="contents">
+			<div class="first-story">
+				<h2>给你讲个故事</h2>
+				<h3>三只小猪的故事</h3>
+				<p class="author">作者：艾水水 时间：2020.2.30</p>
+				<p>猪妈妈生了三只可爱的小猪，<a href="http://baike.baidu.com/link?url=D0bpAwf6TQjc8d7161l6GMXhbQM-XAefMJgnNRFiUA6ERkflLv2eY8LJn2mC1TkvayeZd2V0qc6jO7CPqFamaZErSjT5biI5pzstC4axylRsAarfOxcTj8rB5ET-7e-6">三只小猪</a>彼此友爱，一家人一直过著幸福快乐的日子。
+			有一天，猪妈妈向三只小猪说：<strong>「你们都长大了，应该自己出去盖一间属於自己的房子了。」</strong>
+			然后啊，三只小猪向猪妈妈告别后，就真的出去盖了一间属於自己的房子。<br />
+			老大盖的是草屋，老二盖的是木屋，老三最聪明了，因为它用砖块盖了一间最坚固的砖头房子，也是三间房子中最安全的了。<br />
+			有一天，老大和老二出门去玩耍，结果在路途中遇到了大野狼，大野狼一看到二只小猪就说：「啊！我是大野狼，二只小猪看起来好像很好吃的样子喔！」」老大和老二一见到大野狼，马上赶紧跑回自己的家中躲起来，不过，它们并不知道大野狼也硍在它们的后面，找到三只小猪住的地方了。</p>
+				<img src="http://g.hiphotos.baidu.com/baike/s%3D220/sign=dc9c7e037af40ad111e4c0e1672d1151/6159252dd42a2834e27c7f305ab5c9ea15cebf37.jpg" alt="三只小猪">
+				<p>这时<a href="http://baike.baidu.com/link?url=eHCZwdUpJDCEo1_zizBgzByzpPLwsFXucPqMEuvk-p7aMSw5fiUoPEAsB27QDVvRXrCh5UY13X11hlFvBPcbiytWkyPlK7W7ieg99XHgyAG" target="_blank">大野狼</a>「碰～」的一声，就轻松的把老大和老二的房子撞倒了，所以呢，二只小猪就赶快到老三的砖屋里去躲了起来，老三看到二位哥哥，就赶紧说：<strong>「「快！快！快点进来，大野狼快追来了！</strong>
+			后来，大野狼也来到第三只小猪房子的前面，它以为这间砖头房子跟之前两栋房子一样，很容易就撞倒了，不过，它发现它撞了好几次不旦撞不倒这栋房子，反而把自己的头撞得满头都是包。<br />
+			大野狼想了很多方法都没办法进去，正生气的时候，突然发现房子的上面有一个烟囱，大野狼就爬到屋顶，准备从烟囱进去，不过，三只小猪并不笨，早就在烟囱下面用柴烧水，等大野狼从烟囱下来的时候，水也滚了，大野狼一下来就「啊！」的一声，屁股被烫得红通通，夹著尾巴逃走了，三只小猪也可以松了一口气了。</p>
+			</div>
+			<div class="second-story">
+				<h2>再来一个故事如何</h2>
+				<h3>一双鞋的故事</h3>
+				<p class="author">作者：艾水水 时间：2020.2.30</p>
+				<p>车即将启动，有个年轻人匆匆上车，他的一只脚被车门夹了一下，车开了，他的鞋掉了下去。年轻人毫不犹豫地脱下了另一只鞋，朝第一只鞋扔去。<br />
+			　　有人奇怪地问他为何这样做。年轻人说：<strong>“如果恰好有一个穷人路过这里，他就能捡到一双鞋了，这或许能对他有用。”</strong>这个年轻人叫甘地，印度人都尊称他为<a href="http://baike.baidu.com/link?url=Gy3nblh4WDDGtTyrRwI7pDiEvwzwk7SWld11Jkg_9ChJMvff9U0Khy5cprQUyB9pc5ew8ERtqgf6ehVzePuDdfyD1RzW6g_gRcnkPfFfUce">“圣雄”</a>。<br />
+			　　我的感想：<br />
+			　　一个有才华的人，如果他的灵魂也很伟大，那么他一定能成就一番大业！圣雄甘地就是这样的一个人！</p>
+				<img src="http://h.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=b98862bdabaf2eddd4f14eefb52b66d4/eac4b74543a98226007d379c8d82b9014b90ebc9.jpg" alt="圣雄">
+				<ul>
+					<li>他做了好事一</li>
+					<li>他做了好事二</li>
+					<li>他做了好事三</li>
+				</ul>
+			</div>
+			<div class="pictures clearfix">
+				<h2>来点美图先</h2>
+				<div class="img1">
+					<p>美图一</p>
+					<img src="https://imgsa.baidu.com/baike/s%3D220/sign=571122a7b07eca8016053ee5a1229712/8d5494eef01f3a29c8f5514a9925bc315c607c71.jpg" alt="">
+				</div>
+				<div class="img2">
+					<p>美图二</p>
+					<img src="https://imgsa.baidu.com/baike/s%3D220/sign=571122a7b07eca8016053ee5a1229712/8d5494eef01f3a29c8f5514a9925bc315c607c71.jpg" alt="">
+				</div>
+				<div class="img3">
+					<p>美图三</p>
+					<img src="https://imgsa.baidu.com/baike/s%3D220/sign=571122a7b07eca8016053ee5a1229712/8d5494eef01f3a29c8f5514a9925bc315c607c71.jpg" alt="">
+				</div>
+				<div class="img4">
+					<p>美图四</p>
+					<img src="https://imgsa.baidu.com/baike/s%3D220/sign=571122a7b07eca8016053ee5a1229712/8d5494eef01f3a29c8f5514a9925bc315c607c71.jpg" alt="">
+				</div>
+			</div>
+			<div class="last-story">
+				<h2>最后一个故事</h2>
+				<h3>离家的小狗</h3>
+				<p class="author">作者：艾水水 时间：2020.02.30</p>
+				<p>某户人家养了一只小狗。有一天，小狗突然丢了，这户人家马上报了誓。几天后，小狗被人送到警察局，警察立刻通知了这家人。在等待主人到来时，警察突然发现这只小狗不但没有欢喜的神情，反而悲伤地流泪。<br>
+			　　警察相当好奇：“你应该高兴的。怎么在流泪呢?”小狗回答：“警察先生啊，你有所不知，我是离家出走的!”警察吃惊地问道：“你寒主人虐待你吗?为什么要离寒呢?”<br />
+			　　小狗悲伤地说：“我在主人家已经待了好多年，从一开始就负责家人的安全，一直很尽忠职守地完成我的工作。当然主人也感觉到了，平时见到我会摸摸我、拍拍我，常会带我出去散散步。那种保卫一家人的成就感，那种受重视、受疼爱的感觉，让我更加提醒，好好照顾这一家人，直到有一天—……” <br />
+			　　“怎么样?”警察关心地问道。“有一天家里装上了防盗门，从此我失业了，看门不再是我的职责，家人也不需要我保护了。整天无所事事，对家庭一点儿用都没有，虽然主人还是一样地饲养我，但是我实在受不了这种受冷落的感觉，所以才会离家出走，宁愿过流浪的日子。”</p>
+				<ol>
+					<li>理由一</li>
+					<li>理由二</li>
+					<li>理由三</li>
+				</ol>
+				<p>以下是个表格</p>
+				<table>
+					<tr>
+						<th>姓名</th>
+						<th>年龄</th>
+						<th>性别</th>
+					</tr>
+					<tr>
+						<td>zhangsan</td>
+						<td>21</td>
+						<td><a href="#">男</a></td>
+					</tr>
+					<tr>
+						<td>lisi</td>
+						<td>31</td>
+						<td><a href="#">女</a></td>
+					</tr>
+					<tr class="last-row">
+						<td><strong>人数</strong></td>
+						<td colspan="2"><strong>2</strong></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+        </div>
+		<div class="footer">
+			<p>版权所有©️</p>
+		</div>>
+	</body>
+</html>
