@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0}
+.wrap{
+	width:100%;
+	border:1px solid #999;
+	backgorund:#999;
+	padding:20px;
+	margin:0 auto;
+	display:table-cell;
+}
+.t_name{
+	width:158px;
+	padding:20px;
+	border:1px solid #999;
+	background:#eee;
+	float:left;
+}
+.t_name img{
+	vertical-align:top;
+
+	}
+.main{
+	width:auto;
+	padding:20px;
+	border:1px solid #999;
+	margin:0px 200px 0 220px;
+background:#eee;
+}
+.photo{
+	width:120px;
+	height:400px;
+	border:1px solid #999;
+	float:right;
+	padding:0px 20px 20px;
+	margin:0 auto;
+	background:#eee;
+}
+.photo ul{list-style:none;}
+.photo ul li{
+	border:1px solid #999999;
+	width:80px;
+	height:80px;
+	margin:20px;
+	}
